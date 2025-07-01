@@ -10,7 +10,6 @@ public class Aluno {
     private List<String> avaliacoesAgendadas = new ArrayList<>();
     private boolean receberNotificacoes;
 
-    // Constructor
     public Aluno(String matricula, String nome) {
         this.matricula = matricula;
         this.nome = nome;
@@ -18,7 +17,13 @@ public class Aluno {
         this.receberNotificacoes = true;
     }
 
-    // Getters and Setters
+    public Aluno(String matricula, String nome, boolean mensalidadePaga, boolean receberNotificacoes) {
+        this.matricula = matricula;
+        this.nome = nome;
+        this.mensalidadePaga = mensalidadePaga;
+        this.receberNotificacoes = receberNotificacoes;
+    }
+
     public String getMatricula() {
         return matricula;
     }

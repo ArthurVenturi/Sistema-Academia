@@ -4,10 +4,10 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TestesUnitarios {
-    private static Sistema sistema;
+    private Sistema sistema;
 
-    @BeforeAll
-    static void setUp() {
+    @BeforeEach
+    void setUp() {
         sistema = new Sistema();
     }
 
