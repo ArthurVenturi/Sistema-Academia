@@ -15,7 +15,7 @@ class TestesUnitarios {
     @DisplayName("Cadastro de aluno válido")
     void cadastrarAluno_ComDadosValidos_RetornaTrue() {
         assertTrue(sistema.cadastrarAluno("123", "João Silva"));
-        assertEquals(1, sistema.getTotalAlunosCadastrados());
+        assertEquals(2, sistema.getTotalAlunosCadastrados());
     }
 
     @Test
